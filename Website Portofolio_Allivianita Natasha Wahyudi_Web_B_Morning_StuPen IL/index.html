@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-nU14brUcp6StFntEOOEBvcJm4huWjB0OcIeQ3fltAfSmuZFrkAif0T+UtNGlKKQv" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <style>
+      #contents-2 {
+        background-color: rgb(226, 43, 89);
+      }
+      #contents-3 {
+        background-color: rgb(145, 157, 36);
+      }
+      #contents-4 {
+        background-color: rgb(113, 214, 201);
+      }
+      #contents-5 {
+        background-color: rgb(137, 98, 38);
+      }
+      #contents-6 {
+        background-color: rgb(201, 36, 222);
+      }
+      #article-1 {
+        background-color: brown;
+      }
+      #article-2 {
+        background-color: rgb(106, 94, 127);
+      }
+      #article-1-image {
+        background-color: rgb(26, 173, 65);
+      }
+      #article-2-image {
+        background-color: rgb(75, 52, 138);
+      }
+
+      .btn {
+        border-radius: 24px;
+      }
+
+      #contents {
+        padding: 2em;
+      }
+
+      #contents-1 {
+        margin: 1em 0;
+        padding: 1em;
+      }
+
+      #contents-1-number {
+        color: grey;
+        opacity: 0.25;
+      }
+
+      #contents-1-content {
+        padding-top: 0.5em;
+      }
+
+      #contents-1-content-title {
+        font-size: 1.2em;
+      }
+
+      #article {
+        background-color: #f7f9fa;
+        padding: 1em 2em;
+      }
+
+      #discover-and-footer {
+        padding: 1em 2em;
+      }
+
+      #discover-and-footer-icon-badge-1 {
+        margin: 0.5em 0px;
+      }
+
+      #discover-and-footer-title-subscribtion {
+        margin-top: 0.5em;
+      }
+
+      /* layout ,mobile */
+      @media screen and (max-width: 1400px) {
+        #carousel-right {
+          display: none;
+        }
+      }
+      #carousel {
+        padding: 2em 1em;
+      }
+
+      #carousel-left-button {
+        margin: 1em 0;
+      }
+
+      /* layout website */
+      @media screen and (min-width: 1400px) {
+        #carousel-left-button {
+          margin: 1em 0;
+          width: 20%;
+        }
+      }
+      #carousel {
+        margin: 2em 0;
+      }
+
+      #wave {
+        margin-top: -42px;
+        padding: 0;
+      }
+
+      #contents-1 {
+        padding: 1em;
+      }
+
+      #multi-section {
+        padding-top: 0%;
+      }
+    </style>
+
+    <title>Discover the Microbe</title>
+  </head>
+  <body>
+    <section id="navbar" style="background-color: #a0c9c3">
+      <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #a0c9c3">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="bacteria.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top" />
+            Discover the Microbe
+          </a>
+          <ul class="nav justify-content-end navbar-nav collapse navbar-collapse" id="navbarTogglerDemo03">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Our Story</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Write</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sign In</a>
+            </li>
+            <li class="nav-item">
+              <button class="btn btn-success" type="submit">Get Started</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3">
+                        <strong> Bakteri Baik Ada di Tubuh?</strong>
+                      </h1>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Tahukah kamu, bahwa di dalam tubuh kita ada bakteri yang tidak berbahaya? Ternyata, tidak semua bakteri itu jahat, lho! Mari kita berkenalan dengan bakteri probiotik yang ada di usus kita. Benarkah bakteri tersebut
+                      tidak jahat? Apa sebenarnya fungsinya? Klik tombol di bawah!
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Pelajari lebih lanjut</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="probiotik.jpeg" alt="probiotik" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h1 class="display-3">
+                        <strong> Berkenalan dengan Campak </strong>
+                      </h1>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Sewaktu kecil, kalian pernah dianjurkan untuk menerima vaksin untuk mencegah penyakit campak. Apakah campak itu? Apakah benar penyakit ini disebabkan oleh virus? Apa dampaknya jika kita terkena penyakit campak? Klik
+                      tombol di bawah!
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Pelajari lebih lanjut</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="campak.jpg" alt="campak" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div id="carousel" class="row">
+                <div id="carousel-left" class="col">
+                  <div class="row">
+                    <div class="col">
+                      <h5 class="display-3">
+                        <strong>Mikrospora: Spora Jamur yang Mudah Terbawa Angin</strong>
+                      </h5>
+                    </div>
+                  </div>
+                  <div id="carousel-left-caption" class="row">
+                    <p>
+                      Jamur ada di sekitar kita dan mudah ditemukan di tempat lembab. Bagaimana jamur dapat menyebarkan bibitnya? Apakah benar spora dapat menginfeksi makhluk hidup lainnya melalui perantara udara? Klik tombol di bawah untuk
+                      mengetahui lebih lanjut!
+                    </p>
+                  </div>
+                  <div id="carousel-left-button" class="row">
+                    <button class="btn btn-warning">Pelajari lebih lanjut</button>
+                  </div>
+                </div>
+                <div id="carousel-right" class="col">
+                  <img src="fungal spores.jpeg" alt="spora jamur" class="img-fluid" />
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="trending" style="background-color: #fef9ec">
+      <div class="container">
+        <div id="title" class="row">
+          <h3><img src="bacteria.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top" />Trending di Discover the Microbe</h3>
+        </div>
+        <div id="contents" class="row">
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>01</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i> Allivianita, spesialis sel dan molekuler</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Bagaimana Menentukan Ketertarikanmu di Sains?</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>August 10 | 5 mins read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>02</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i> Natasha, microbiologist</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Apakah Vaksin itu Sungguhan?</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>June 19 | 3 mins read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>03</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i>Wahyudi, peneliti anatomi dan fisiologi hewan</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Beberapa Hewan Memang Mirip dengan Manusia</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>November 30 | 7 mins read <i class="bi bi-star"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>04</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i> Livia, ahli sel bakteri</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Bagaimana Bakteri dapat Hidup di Tubuh Kita</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>September 7 | 5 mins read <i class="bi bi-star"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>05</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i> Vivi, ekologist</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Potensi Munculnya Virus Baru Akibat Melelehnya Kutub Utara</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>May 8 | 8 mins read <i class="bi bi-star"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="contents-1" class="col-md-4">
+            <div class="row">
+              <div id="contents-1-number" class="col-2">
+                <h2><strong>06</strong></h2>
+              </div>
+              <div id="contents-1-content" class="col">
+                <div id="contents-1-content-author" class="row">
+                  <strong>
+                    <p style="margin-bottom: 0"><i class="bi bi-person-circle"></i>Shasha, ahli biodiversitas jamur</p>
+                  </strong>
+                </div>
+                <div id="contents-1-content-title" class="row">
+                  <p style="margin-bottom: 0"><strong>Bagaimana Cara Mengindentifikasi Jamur?</strong></p>
+                </div>
+                <div id="contents-1-content-time-and-date" class="row">
+                  <p>August 10 | 10 mins read <i class="bi bi-star-fill"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr style="margin: 0px 0px; height: 3px; opacity: 0.5" />
+
+    <section id="multi-section">
+      <div class="container">
+        <div class="row">
+          <div id="article" class="col-md-8">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="bacteria.png" alt="Bakteri" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 0.5 em" />Natasha, ahli mikrobiologi</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong> Kasus Penyakit Mulut dan Kuku (PMK) pada Sapi </strong>
+                    </p>
+                    <p class="card-text">Penyakit PMK menjadi penyebab tingginya kematian pada sapi pada tahun 2023. Penyakit ini disebabkan oleh virus Aphthovirus. Apakah penyakit ini dapat menular ke manusia?</p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">August 2 | 6 mins read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="PMK.jpeg" class="img-fluid rounded-start" alt="PMK pada Sapi" />
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title"><img src="bacteria.png" alt="Bakteri" width="30" height="30" class="d-inline-block align-text-top" style="margin-right: 0.5 em" />Viana, ahli patologi</h5>
+                    <p class="card-text" style="margin-bottom: 0">
+                      <strong> Cokelat dalam Meningkatkan Imun Tubuh </strong>
+                    </p>
+                    <p class="card-text">Keberadaan cokelat yang mudah ditemukan di sekitar kita, ternyata memiliki fungsi dalam meningkatkan imun. Bagaimana cokelat dapat melakukan hal tersebut?</p>
+                    <div class="card-text row">
+                      <div class="col-md-8">
+                        <small class="text-muted">August 10 | 5 mins read</small>
+                      </div>
+                      <div class="col-md-4 text-end">
+                        <i class="bi bi-bookmark"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <img src="cokelat.jpg" class="img-fluid rounded-start" alt="Cokelat" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="discover-and-footer" class="col-md-4">
+            <div id="discover-and-footer-title" class="row">
+              <h5>Temukan topik favoritmu!</h5>
+            </div>
+            <div id="discover-and-footer-icon-badge" class="row align-items-center">
+              <div id="discover-and-footer-icon-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-dark">Bakteri</button>
+              </div>
+              <div id="discover-and-footer-icon-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-dark">Virus</button>
+              </div>
+              <div id="discover-and-footer-icon-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-dark">Jamur</button>
+              </div>
+              <div id="discover-and-footer-icon-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-dark">Kesehatan</button>
+              </div>
+              <div id="discover-and-footer-icon-badge-1" class="col-3">
+                <button type="button" class="btn btn-outline-dark">Vaksin</button>
+              </div>
+              <div class="col-6">
+                <a href="#">Telusuri Semua Topik</a>
+              </div>
+            </div>
+            <div id="discover-and-footer-title-subscribtion">
+              <h5>Subscribe for more</h5>
+              <p>Dapatkan pemberitahuan untuk rilisan terbaru!</p>
+            </div>
+            <div id="discover-and-footer-form" class="row">
+              <div class="col">
+                <form class="row g-3">
+                  <div class="col-auto">
+                    <label for="inputPassword2" class="visually-hidden">e-mail</label>
+                    <input type="text" class="form-control" id="inputPassword2" placeholder="natasha@gmail.com" />
+                  </div>
+                  <div class="col-auto">
+                    <button type="submit" class="btn btn-warning" style="border-radius: 0">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <hr style="height: 3px; opacity: 0.5" />
+            <div id="footer" class="row align-items-center">
+              <div id="footer-help" class="col-2">
+                <small>
+                  <strong>Help</strong>
+                </small>
+              </div>
+              <div id="footer-status" class="col-2">
+                <small>
+                  <strong>Status</strong>
+                </small>
+              </div>
+              <div id="footer-writers" class="col-2">
+                <small>
+                  <strong>Writers</strong>
+                </small>
+              </div>
+              <div id="footer-blog" class="col-2">
+                <small>
+                  <strong>Blog</strong>
+                </small>
+              </div>
+              <div id="footer-privacy" class="col-2">
+                <small>
+                  <strong>Privacy</strong>
+                </small>
+              </div>
+              <div id="footer-term" class="col-2">
+                <small>
+                  <strong>Term</strong>
+                </small>
+              </div>
+              <div id="footer-about" class="col-2">
+                <small>
+                  <strong>About</strong>
+                </small>
+              </div>
+              <div class="row" style="margin-top: 1em">
+                <p><i class="bi bi-stars"></i> Created with passion by Allivianita</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    -->
+      </div>
+    </section>
+  </body>
+</html>
